@@ -1,7 +1,7 @@
 import { View } from "react-native";
-import { SplashScreen } from "./pages";
-import Onboarding from "./pages/Onboarding";
 import {useFonts} from 'expo-font';
+import { NavigationContainer } from "@react-navigation/native";
+import Router from "./routers";
 
 export default function App()
 {
@@ -13,12 +13,8 @@ export default function App()
         return null;
     }
     return (
-        <>
-            <View style={{ flex: 1, backgroundColor: "#D8F4F2" }}>
-                {/* Entry Point */}
-                {/* <SplashScreen /> */}
-                <Onboarding />
-            </View>
-        </>
+        <NavigationContainer independent={true}>
+            <Router />
+        </NavigationContainer>
     )
 }
