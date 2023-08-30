@@ -1,4 +1,4 @@
 // SplashScreen
 import SplashScreen from "./SplashScreen";
-
-export {SplashScreen}
+import Onboarding from "./Onboarding";
+export {SplashScreen, Onboarding}
