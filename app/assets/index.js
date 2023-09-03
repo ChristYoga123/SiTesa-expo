@@ -1,8 +1,12 @@
 // SplashScreen
-import SplashLogo from "./SplashScreen/logo.webp"
-import SplashCircle from "./SplashScreen/circle.webp"
+import SplashLogo from "./images/SplashScreen/logo.webp"
+import SplashCircle from "./images/SplashScreen/circle.webp"
 
 // Onboarding
-import OnboardingLogo from "./Onboarding/logo.webp"
+import OnboardingLogo from "./images/Onboarding/logo.webp"
 
-export {SplashLogo, SplashCircle, OnboardingLogo}
+// Articles
+import ArticlesHero from "./images/Articles/hero.webp";
+import ArticlesDummy from "./images/Articles/dummy.webp";
+import ArticleShowDummy from "./images/Articles/dummyshow.webp";
+export {SplashLogo, SplashCircle, OnboardingLogo, ArticlesHero, ArticlesDummy, ArticleShowDummy}
