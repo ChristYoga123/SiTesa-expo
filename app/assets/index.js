@@ -5,4 +5,7 @@ import SplashCircle from "./SplashScreen/circle.webp"
 // Onboarding
 import OnboardingLogo from "./Onboarding/logo.webp"
 
-export {SplashLogo, SplashCircle, OnboardingLogo}
+// Articles
+import ArticlesHero from "./Articles/hero.webp";
+import ArticlesDummy from "./Articles/dummy.webp";
+export {SplashLogo, SplashCircle, OnboardingLogo, ArticlesHero, ArticlesDummy}

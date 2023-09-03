@@ -1,7 +1,6 @@
 import React from 'react';
 import {View, StyleSheet, Image, Text, TouchableOpacity} from 'react-native';
 import { OnboardingLogo } from '../../assets';
-import { useNavigation } from '@react-navigation/core';
 
 const Onboarding = ({navigation}) => {
     return (
