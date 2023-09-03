@@ -18,7 +18,7 @@ const Articles = () => {
                                     <View style={{ flex: 1, flexDirection: 'column', gap: 2 }}>
                                         <Text style={{ fontFamily: 'Poppins-SemiBold', color:"#00A195", fontSize: 12 }}>Tips Kelola Stress Agar Hidup Lebih Bahagia </Text>
                                         <Text style={{ fontFamily: 'Poppins', fontSize: 10}} numberOfLines={2}>Stres merupakan perasaan yang wajar dialami seseorang dalam kehidupannya sehari-hari.</Text>
-                                        <Text style={{ fontFamily: "Poppins", color: "gray", fontSize: 10, fontStyle:'italic' }}>View All...</Text>
+                                        <Text style={{ fontFamily: "Poppins", color: "gray", fontSize: 10, fontStyle:'italic' }}>Selengkapnya...</Text>
                                     </View>
                                 </View>
                             </TouchableOpacity>
