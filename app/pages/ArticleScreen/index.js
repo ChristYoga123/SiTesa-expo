@@ -3,7 +3,7 @@ import {View, StyleSheet, Text, Image, TouchableOpacity} from 'react-native';
 import { ArticlesDummy, ArticlesHero } from '../../assets';
 import { ScrollView } from 'react-native-gesture-handler';
 
-const Articles = () => {
+const Articles = ({navigation}) => {
     return (
         <ScrollView>
             <View style={{ flex: 1, backgroundColor: "#D8F4F2" }}>
@@ -12,7 +12,9 @@ const Articles = () => {
                     <Text style={{ fontFamily: "Poppins-SemiBold",  fontSize:20 , color: "#00A195"}}>Artikel Unggulan</Text>
                     <View style={{marginTop: 20 }}>
                         {[1,2,3,4,5,6,7,8,9,10].map(() => (
-                            <TouchableOpacity>
+                            <TouchableOpacity onPress={() => {
+                                navigation.navigate("ArticleShow");
+                            }}>
                                 <View style={{ backgroundColor: 'white', flexDirection: 'row' , padding: 10, gap: 5, borderRadius: 10, marginBottom: 10}}>
                                     <Image source={ArticlesDummy} />
                                     <View style={{ flex: 1, flexDirection: 'column', gap: 2 }}>
