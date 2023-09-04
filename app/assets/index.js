@@ -18,4 +18,5 @@ import ChatService from "./images/Articles/chat-service.webp";
 import ArticleDummy from "./images/Articles/dummy.webp";
 
 import ProductDummy from "./images/Products/dummy.webp";
-export {SplashLogo, SplashCircle, OnboardingLogo, ArticleHero, ArticleFeature, ConsultationFeature, CalculatorFeature, Call, ArticleService, CalculatorService, ProductService, ChatService, ArticleDummy, ProductDummy}
+import ImtTable from "./images/Calculator/imt-table.webp";
+export {SplashLogo, SplashCircle, OnboardingLogo, ArticleHero, ArticleFeature, ConsultationFeature, CalculatorFeature, Call, ArticleService, CalculatorService, ProductService, ChatService, ArticleDummy, ProductDummy, ImtTable}
