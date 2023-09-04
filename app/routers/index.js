@@ -9,9 +9,9 @@ const Tab = createBottomTabNavigator();
 const MainApp = () => {
     return (
         <Tab.Navigator initialRouteName='Articles'>
-            <Tab.Screen name="Articles" component={Articles} options={{ headerShown: false }}/>
-            <Tab.Screen name="Calculator" component={Calculator} options={{ headerShown: false }}/>
-            <Tab.Screen name="Products" component={Products} options={{ headerShown: false }}/>
+            <Tab.Screen name="Artikel" component={Articles} options={{ headerShown: false }}/>
+            <Tab.Screen name="Kalkulator" component={Calculator} options={{ headerShown: false }}/>
+            <Tab.Screen name="Produk" component={Products} options={{ headerShown: false }}/>
         </Tab.Navigator>
     )
 }
@@ -22,7 +22,7 @@ const Router = () => {
             <Stack.Screen name="SplashScreen" component={SplashScreen} options={{ headerShown: false }} />
             <Stack.Screen name="Onboarding" component={Onboarding} options={{ headerShown: false }} />    
             <Stack.Screen name="MainApp" component={MainApp} options={{ headerShown: false }} />
-            <Stack.Screen name='ArticleShow' component={ArticleShow} options={{ headerShown: false }}></Stack.Screen>
+            <Stack.Screen name='ArticleShow' component={ArticleShow} options={{ title: "Detail Artikel", headerTitleAlign: "center" }} ></Stack.Screen>
             <Stack.Screen name='ProductShow' component={ProductShow} options={{ headerShown: false }}></Stack.Screen>
         </Stack.Navigator>
     );

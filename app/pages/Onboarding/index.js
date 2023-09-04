@@ -4,7 +4,7 @@ import { OnboardingLogo } from '../../assets';
 
 const Onboarding = ({navigation}) => {
     return (
-        <View style={{ flex: 1 }}>
+        <View style={{ flex: 1, backgroundColor: 'white' }}>
             <Image source={OnboardingLogo} />
             <View style={{ paddingHorizontal: 40, marginVertical: 40}}>
                 <Text style={{ fontFamily: 'Poppins', textAlign: 'center', lineHeight: 24 , color: '#00A195'}}>
