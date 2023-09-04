@@ -2,12 +2,12 @@ import React, { useEffect } from 'react';
 import {View, StyleSheet, Image} from 'react-native';
 import { SplashCircle, SplashLogo } from '../../assets';
 
-const SplashScreen = () => {
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         navigation.replace('Onboarding');
-    //     }, 2000)
-    // }, [])
+const SplashScreen = ({navigation}) => {
+    useEffect(() => {
+        setTimeout(() => {
+            navigation.replace('Onboarding');
+        }, 2000)
+    }, [])
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center'}}>
             <Image source={SplashCircle} style={{ position: 'absolute', top: 0, left: 0 }}/>

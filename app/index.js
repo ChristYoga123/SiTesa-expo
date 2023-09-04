@@ -19,9 +19,8 @@ export default function App()
         return null;
     }
     return (
-        <Onboarding />
-        // <NavigationContainer independent={true}>
-        //     <Router />
-        // </NavigationContainer>
+        <NavigationContainer independent={true}>
+            <Router />
+        </NavigationContainer>
     )
 }

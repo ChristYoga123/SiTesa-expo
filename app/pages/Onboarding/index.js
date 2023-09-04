@@ -2,7 +2,7 @@ import React from 'react';
 import {View, StyleSheet, Image, Text, TouchableOpacity} from 'react-native';
 import { OnboardingLogo } from '../../assets';
 
-const Onboarding = () => {
+const Onboarding = ({navigation}) => {
     return (
         <View style={{ flex: 1 }}>
             <Image source={OnboardingLogo} />
@@ -13,7 +13,9 @@ const Onboarding = () => {
                     Yuk! Gali informasi lebih dalam mengenai kesehatan diri
                 </Text>
             </View>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => {
+                navigation.replace("MainApp");
+            }}>
                 <View style={{ backgroundColor: "#00A295", width: 150, borderRadius: 20, padding: 5, marginLeft: 'auto', marginRight: 'auto' }}>
                     <Text style={{ fontFamily: 'Poppins', color: 'white', textAlign: 'center' }}>Mulai Sekarang</Text>
                 </View>
