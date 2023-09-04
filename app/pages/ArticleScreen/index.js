@@ -2,8 +2,10 @@ import React from 'react';
 import {View, StyleSheet, Text, Image, TouchableOpacity, ScrollView} from 'react-native';
 import { ArticleDummy, ArticleFeature, ArticleHero, ArticleService, CalculatorFeature, CalculatorService, Call, ChatService, ConsultationFeature, ProductService,  } from '../../assets';
 import { ArticleCard, ArticleFeatureCard, ArticleServiceCard } from '../../components';
+import { useNavigation } from 'expo-router';
 
 const Articles = () => {
+    const navigation = useNavigation();
     const articleFeatureCards = [
         {
             id: 1,
@@ -76,7 +78,9 @@ const Articles = () => {
                         </View>
                     </ScrollView>
 
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => {
+                        navigation.navigate("Chat");
+                    }}>
                         <View style={{ marginVertical: 10, flexDirection: "row", gap: 10, paddingVertical: 20, paddingHorizontal: 10, backgroundColor: "#D8F4F2", borderRadius: 10 }}>
                             <Image source={Call} style={{ width: 30, height: 30, marginTop: 10 }} />
                             <View style={{ flexDirection: 'column', flex: 1 }}>
