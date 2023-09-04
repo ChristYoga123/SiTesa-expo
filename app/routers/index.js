@@ -23,7 +23,7 @@ const Router = () => {
             <Stack.Screen name="Onboarding" component={Onboarding} options={{ headerShown: false }} />    
             <Stack.Screen name="MainApp" component={MainApp} options={{ headerShown: false }} />
             <Stack.Screen name='ArticleShow' component={ArticleShow} options={{ title: "Detail Artikel", headerTitleAlign: "center" }} ></Stack.Screen>
-            <Stack.Screen name='ProductShow' component={ProductShow} options={{ headerShown: false }}></Stack.Screen>
+            <Stack.Screen name='ProductShow' component={ProductShow} options={{ title: "Produk Unggulan", headerTitleAlign: "center" }}></Stack.Screen>
         </Stack.Navigator>
     );
 }

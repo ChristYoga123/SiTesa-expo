@@ -17,4 +17,5 @@ import ProductService from "./images/Articles/product-service.webp";
 import ChatService from "./images/Articles/chat-service.webp";
 import ArticleDummy from "./images/Articles/dummy.webp";
 
-export {SplashLogo, SplashCircle, OnboardingLogo, ArticleHero, ArticleFeature, ConsultationFeature, CalculatorFeature, Call, ArticleService, CalculatorService, ProductService, ChatService, ArticleDummy}
+import ProductDummy from "./images/Products/dummy.webp";
+export {SplashLogo, SplashCircle, OnboardingLogo, ArticleHero, ArticleFeature, ConsultationFeature, CalculatorFeature, Call, ArticleService, CalculatorService, ProductService, ChatService, ArticleDummy, ProductDummy}
