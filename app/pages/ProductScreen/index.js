@@ -3,7 +3,7 @@ import { Image, TouchableOpacity } from 'react-native';
 import {View, StyleSheet, ScrollView, Text} from 'react-native';
 import { ProductStore, ProductsDummy } from '../../assets';
 
-const Products = () => {
+const Products = ({navigation}) => {
     return (
         <ScrollView>
             <View style={{ flex: 1, backgroundColor: "#D8F4F2",  paddingHorizontal: 30 }}>
@@ -11,7 +11,9 @@ const Products = () => {
 
                 <View style={{ marginTop: 10, flexDirection: 'row', flexWrap: 'wrap', gap: 10, justifyContent: 'center' }}>
                     {[1,2,3,4,5,6,7,8,9,10].map(() => (
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={() => {
+                                navigation.navigate("ProductShow");
+                            }}>
                             <View style={{ flexDirection: 'column', padding: 10, backgroundColor: 'white', borderRadius: 10 }}>
                                 <Image source={ProductsDummy} style={{ width: 125, height: 125, borderRadius: 10 }}/>
                                 <View style={{ marginTop: 5, flexDirection: 'row', gap: 10 }}>

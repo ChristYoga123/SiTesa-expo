@@ -4,4 +4,5 @@ import Articles from "./ArticleScreen";
 import Calculator from "./CalculatorScreen";
 import Products from "./ProductScreen";
 import ArticleShow from "./ArticleScreen/show";
-export {SplashScreen, Onboarding, Articles, Calculator, Products, ArticleShow}
+import ProductShow from "./ProductScreen/show";
+export {SplashScreen, Onboarding, Articles, Calculator, Products, ArticleShow, ProductShow}
