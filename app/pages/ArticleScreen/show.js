@@ -1,8 +1,7 @@
 import React from 'react';
-import {View, StyleSheet, Image, Text, TouchableOpacity, ScrollView} from 'react-native';
-import {  SplashCircle } from '../../assets';
-import { AntDesign } from '@expo/vector-icons';
+import {View, StyleSheet, Image, Text, ScrollView} from 'react-native';
 import RenderHTML from 'react-native-render-html';
+import { ArticleDummy } from '../../assets';
 const ArticleShow = ({navigation, title, heroImage, content}) => {
     const tagStyle = {
         p: {
@@ -14,21 +13,16 @@ const ArticleShow = ({navigation, title, heroImage, content}) => {
     }
     return (
         <ScrollView>
-            <View style={{ flex: 1, backgroundColor: "#D8F4F2" }}>
-                <Image source={SplashCircle} style={{ position: 'absolute', zIndex: -1, top: 0, left: 0 }} />
-                <TouchableOpacity onPress={() => {
-                    navigation.navigate("Articles");
-                }}>
-                    <View style={{ flexDirection: 'row', gap: 10, marginTop: 30, marginLeft: 10 }}>
-                        <AntDesign name="arrowleft" size={24} color="#888686" />
-                        <Text style={{ fontFamily: 'Poppins', fontSize: 15, marginTop: 3 }}>Kembali</Text>
-                    </View>
-                </TouchableOpacity>
-                    <View style={{ paddingHorizontal: 20, marginTop: 50 }}>
-                        <Text style={{ fontFamily: "Poppins-SemiBold", fontSize: 20, color: "#00A295" }}>{title}</Text>
-                        <Image source={heroImage} style={{ marginVertical: 20, marginHorizontal: 20 }}/>
-                        <RenderHTML contentWidth={100} source={content} tagsStyles={tagStyle} />
-                    </View>
+            <View style={{flex: 1, backgroundColor: "white", alignItems: "center" }}>
+                <Text style={{ fontFamily: "Poppins-SemiBold", fontSize: 16, marginTop: 20 }}>Tips Mengelola Sampah di Rumah, Yuk Coba Bareng Keluarga!</Text>
+                <Image source={ArticleDummy} style={{ marginVertical: 20 }}/>
+                <Text style={{ fontFamily: "Inter", textAlign: "justify" }}>
+                Berbagai kebutuhan manusia yang semakin banyak membuat keinginan terhadap berbagai macam produk instan pun dibutuhkan, hal ini agar mampu menyeimbangi padatnya aktivitas masyarakat di Indonesia. Tapi, perlu diketahui juga bahwa produk instan terbilang tidak baik bagi lingkungan, karena sering kali menciptakan banyaknya limbah rumah tangga.
+                {'\n\n'}
+                Selain sampahnya yang mengganggu, efek sampingnya pun juga menimbulkan aroma tak sedap. Oleh karena itu, kamu pun harus mengelola dengan benar agar tak ada bakteri dan kuman yang menyebabkan penyakit. Bagaimana caranya? Yuk, ikutilah beberapa cara di bawah ini agar dapat membuat sistem pengelolaan sampah di rumah menjadi lebih baik.
+                {'\n\n'}
+                Selain sampahnya yang mengganggu, efek sampingnya pun juga menimbulkan aroma tak sedap. Oleh karena itu, kamu pun harus mengelola dengan benar agar tak ada bakteri dan kuman yang menyebabkan penyakit. Bagaimana caranya? Yuk, ikutilah beberapa cara di bawah ini agar dapat membuat sistem pengelolaan sampah di rumah menjadi lebih baik.
+                </Text>
             </View>
         </ScrollView>
     );

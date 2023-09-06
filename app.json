@@ -8,6 +8,17 @@
       "expo-router"
     ],
     "name": "SiTesa",
-    "slug": "SiTesa"
+    "slug": "SiTesa",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "20ccadb7-747b-4004-8582-40367d4f1560"
+      }
+    },
+    "android": {
+      "package": "com.christyoga.SiTesa"
+    }
   }
 }
