@@ -1,17 +1,22 @@
 // SplashScreen
-import SplashLogo from "./images/SplashScreen/logo.webp"
-import SplashCircle from "./images/SplashScreen/circle.webp"
+import SplashLogo from "./images/SplashScreen/splash-logo.webp";
+import SplashCircle from "./images/SplashScreen/splash-circle.webp";
 
-// Onboarding
-import OnboardingLogo from "./images/Onboarding/logo.webp"
+// OnboardingScreen
+import OnboardingLogo from "./images/Onboarding/onboarding-logo.webp";
 
-// Articles
-import ArticlesHero from "./images/Articles/hero.webp";
-import ArticlesDummy from "./images/Articles/dummy.webp";
-import ArticleShowDummy from "./images/Articles/dummyshow.webp";
+// Article
+import ArticleHero from "./images/Articles/article-hero.webp";
+import ArticleFeature from "./images/Articles/article-feature.webp";
+import ConsultationFeature from "./images/Articles/consult-feature.webp";
+import CalculatorFeature from "./images/Articles/calculator-feature.webp";
+import Call from "./images/Articles/call.webp";
+import ArticleService from "./images/Articles/article-service.webp";
+import CalculatorService from "./images/Articles/calculator-service.webp";
+import ProductService from "./images/Articles/product-service.webp";
+import ChatService from "./images/Articles/chat-service.webp";
+import ArticleDummy from "./images/Articles/dummy.webp";
 
-// Products
-import ProductsDummy from "./images/Products/dummy.webp";
-import ProductStore from "./images/Products/store.webp";
-
-export {SplashLogo, SplashCircle, OnboardingLogo, ArticlesHero, ArticlesDummy, ArticleShowDummy, ProductsDummy, ProductStore}
+import ProductDummy from "./images/Products/dummy.webp";
+import ImtTable from "./images/Calculator/imt-table.webp";
+export {SplashLogo, SplashCircle, OnboardingLogo, ArticleHero, ArticleFeature, ConsultationFeature, CalculatorFeature, Call, ArticleService, CalculatorService, ProductService, ChatService, ArticleDummy, ProductDummy, ImtTable}
